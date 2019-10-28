@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="<%= proxy_name %>">
+    <Basepaths><%= base_path %></Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedBy><%= apigee_username %></CreatedBy>
+    <Description>Add a description for the API Proxy <%= proxy_name %></Description>
+    <DisplayName><%= proxy_name %></DisplayName>
+    <LastModifiedBy><%= apigee_username %></LastModifiedBy>
+    <Policies>
+        <Policy>add-cors</Policy>
+        <Policy>check-quota</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
